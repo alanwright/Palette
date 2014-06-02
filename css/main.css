@@ -1,0 +1,82 @@
+.body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden; 
+}
+
+.wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity:0.0;
+	filter:alpha(opacity=00); /* For IE8 and earlier */
+}
+
+.wrapper:hover {
+	opacity:.4;
+}
+
+.input-wrap {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+}
+
+.final-wrap {
+	position: relative;
+	width: 150px;
+	min-width: 150px;
+	margin: 0 auto;
+}
+
+.color-input {
+	
+}
+
+.color1 {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	min-height: 20%;
+	background-color: #2C3E50;
+	width:100%;
+}
+
+.color2 {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	min-height: 20%;
+	background-color: #E74C3C;
+	width:100%;
+}
+
+.color3 {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	min-height: 20%;
+	background-color: #ECF0F1;
+	width:100%;
+}
+
+.color4 {
+	position: absolute;
+	left: 0;
+	top: 60%;
+	min-height: 20%;
+	background-color: #3498DB;
+	width:100%;
+}
+
+.color5 {
+	position: absolute;
+	left: 0;
+	top: 80%;
+	min-height: 20%;
+	background-color: #2980B9;
+	width:100%;
+}
