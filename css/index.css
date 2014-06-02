@@ -24,6 +24,35 @@ label {
     color: #34495e;
 }
 
+.full {
+    width: 100%;
+}
+
+.plzcenter {
+    margin: 0 auto;
+}
+
+.color1 {
+    background-color: #0e90d2;
+    height:10%;
+}
+
+.color2 {
+    background-color: #8058A5;
+}
+
+.color3 {
+    background-color: #5eb95e;
+}
+
+.color4 {
+    background-color: #dd514c;
+}
+
+.color5 {
+    background-color: #FAD232;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -137,7 +166,8 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 45%;
+    min-height: 250px;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -146,10 +176,10 @@ a.pure-button-primary {
 .splash {
     /* absolute center .splash within .splash-container */
     width: 80%;
-    height: 50%;
+    height: 80%;
     margin: auto;
     position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -180,7 +210,7 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 44%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -254,7 +284,7 @@ a.pure-button-primary {
     to work with */
     .splash {
         width: 50%;
-        height: 50%;
+        height: 80%;
     }
 
     .splash-head {

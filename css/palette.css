@@ -1,0 +1,100 @@
+.body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden; 
+}
+
+.color1 {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	min-height: 20%;
+	background-color: #2C3E50;
+	width:100%;
+	display: table;
+	text-align: center;
+	color: #fff;
+	font-size: 400%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  	text-shadow: 0 0 2px #000;
+  	-moz-text-shadow: 0 0 2px #000;
+  	-webkit-text-shadow: 0 0 2px #000;
+   	font-weight: 300; 
+}
+
+.color2 {
+	position: absolute;
+	left: 0;
+	top: 20%;
+	min-height: 20%;
+	background-color: #E74C3C;
+	width:100%;
+	display: table;
+	text-align: center;
+	color: #fff;
+	font-size: 400%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-shadow: 0 0 2px #000;
+  	-moz-text-shadow: 0 0 2px #000;
+  	-webkit-text-shadow: 0 0 2px #000;
+   	font-weight: 300; 
+}
+
+.color3 {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	min-height: 20%;
+	background-color: #ECF0F1;
+	width:100%;
+	display: table;
+	text-align: center;
+	color: #fff;
+	font-size: 400%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-shadow: 0 0 2px #000;
+  	-moz-text-shadow: 0 0 2px #000;
+  	-webkit-text-shadow: 0 0 2px #000;
+   	font-weight: 300; 
+}
+
+.color4 {
+	position: absolute;
+	left: 0;
+	top: 60%;
+	min-height: 20%;
+	background-color: #3498DB;
+	width:100%;
+	display: table;
+	text-align: center;
+	color: #fff;
+	font-size: 400%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-shadow: 0 0 2px #000;
+  	-moz-text-shadow: 0 0 2px #000;
+  	-webkit-text-shadow: 0 0 2px #000;
+   	font-weight: 300; 
+}
+
+.color5 {
+	position: absolute;
+	left: 0;
+	top: 80%;
+	min-height: 20%;
+	background-color: #2980B9;
+	width:100%;
+	display: table;
+	text-align: center;
+	color: #fff;
+	font-size: 400%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-shadow: 0 0 2px #000;
+  	-moz-text-shadow: 0 0 2px #000;
+  	-webkit-text-shadow: 0 0 2px #000;
+   	font-weight: 300; 
+}
+
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+}
