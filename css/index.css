@@ -17,8 +17,12 @@ body {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    overflow: auto;
 }
 
+p ul {
+    overflow: auto;
+}
 a {
     color: #1f8dd6;
     text-decoration: none;
