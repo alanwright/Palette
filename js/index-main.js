@@ -1,4 +1,6 @@
 $(function(){
+	$("header").headroom();
+
 	$('#input1').val('0E90D2');
 	$('#input2').val('8058A5');
 	$('#input3').val('5EB95E');

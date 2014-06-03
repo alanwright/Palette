@@ -2,32 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple color palette Generator">
 
-    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <title>Palette - A Simple Color Palette Generator</title>
 
-    
+    <link href='http://fonts.googleapis.com/css?family=Pacifico|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 
-
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-
-
-
-<!--[if lte IE 8]>
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-  
-<![endif]-->
-<!--[if gt IE 8]><!-->
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-  
-<!--<![endif]-->
+    <!--[if lte IE 8]>
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+      
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+      
+    <!--<![endif]-->
 
 
-
-  
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/index-old-ie.css">
     <![endif]-->
@@ -35,34 +29,31 @@
         <link rel="stylesheet" href="css/index.css">
     <!--<![endif]-->
   
-
-
-
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
 
 </head>
 <body>
 
-    <div class="header">
+    <header id="header" class="header header--fixed animated">
         <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-            <a class="pure-menu-heading" href="">Color Pal</a>
+            <a class="cursive" href="">Palette</a>
 
-            <!--<ul>
-                <li class="pure-menu-selected"><a href="#">Home</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>-->
+            <ul>
+                <li class="pure-menu-selected"><a href="#start">Get Started</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#formula">Formula</a></li>
+            </ul>
         </div>
-    </div>
+    </header>
 
     <div class="splash-container">
         <div class="splash">
-            <h1 class="splash-head">Color Pal</h1>
+            <h1 class="splash-head">Palette</h1>
             <p class="splash-subhead">
                 A simple and beautiful color palette generator <i class="fa fa-smile-o"></i> 
             </p>
             <p>
-                <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+                <a href="#start" class="pure-button pure-button-primary">Get Started</a>
             </p>
         </div>
     </div>
@@ -72,7 +63,7 @@
         <div class="size-chart pure-g">
              
              <div class="content full">
-                <h2 class="content-head is-center">Make a Color Palette</h2>
+                <h2 class="content-head is-center"><a id="start"></a>Make a Color Palette</h2>
 
                  <!-- <h4 class="is-center">
                     Enter five hex color values below and click the view button for your stunning color palette.
@@ -128,7 +119,7 @@
         <div class="size-chart pure-g">
              
              <div class="content">
-                <h2 class="content-head is-center">Why choose Colorify?</h2>
+                <h2 class="content-head is-center"><a id="info"></a>Why Use Palette?</h2>
 
                 <div class="pure-g">
                     <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
@@ -173,28 +164,44 @@
         </div>
 
         <div class="content">
-            <h2 class="content-head is-center">Creating Your Own Palette URL</h2>
-            <p>
-                You can create your own palette generation system that links to the palette creator, or quickly make your own links on-the-fly without even using a palette generator. Creation of a url is as simple as plugging in the color hexadecimal values as needed shown in the formula below.<br>
-                <br>
-                <code>http://alanwright.github.io/Color/palette.html?c1=<strong>XXXXXX</strong>&c2=<strong>XXXXXX</strong>&c3=<strong>XXXXXX</strong>&c4=<strong>XXXXXX</strong>&c5=<strong>XXXXXX</strong>&</code>
-                <br>
-                <br>
-                'c1' stands for color 1, c2 for color 2 and so on. Not all colors must be provided (they will default to another value). If you do not want a color I recommend specifying 'fff' for white. Hexadecimal color codes should be 3 or 6 characters. Below are some examples of palettes.
-                <br>
-                <ul>
-                    <li><a href="http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&" target="_blank">http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&</a></li>
-                </ul>
-            </p>
+            <h2 class="content-head is-center"><a id="formula"></a>Creating Your Own Palette URL</h2>
+            <div class="size-chart pure-g">
+                 <div class="pure-u-1-5"></div>
+                 <div class="pure-u-3-5">
+                     <p>
+                        You can create your own palette generation system that links to the palette creator, or quickly make your own links on-the-fly without even using a palette generator. Creation of a url is as simple as plugging in the color hexadecimal values as needed shown in the formula below.<br>
+                        <br>
+                        <code>http://alanwright.github.io/Color/palette.html?c1=<strong>XXXXXX</strong>&c2=<strong>XXXXXX</strong>&c3=<strong>XXXXXX</strong>&c4=<strong>XXXXXX</strong>&c5=<strong>XXXXXX</strong>&</code>
+                        <br>
+                        <br>
+                        'c1' stands for color 1, c2 for color 2 and so on. Not all colors must be provided (they will default to another value). If you do not want a color I recommend specifying 'fff' for white. Hexadecimal color codes should be 3 or 6 characters. Below are some examples of palettes.
+                        <br>
+                        <ul>
+                            <li><a href="http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&" target="_blank">http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&</a></li>
+                        </ul>
+                    </p>
+                </div>
+                 <div class="pure-u-1-5"></div>
+            </div>
         </div>
 
         <div class="footer l-box is-center">
-            View the source of this layout to learn more. Made with love by the YUI Team.
+            <p>
+                <iframe src="http://ghbtns.com/github-btn.html?user=alanwright&repo=Bootstrap-Website&type=fork"
+    allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=alanwright&repo=Bootstrap-Website&type=watch"
+    allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe><br>
+                <a href="https://twitter.com/iamalanwright" class="twitter-follow-button" data-show-count="false">Follow @iamalanwright</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
+            Copyright &copy; <a href="http://www.wrightlyso.com" target="_blank">Alan Wright</a> 2014 <i class="fa fa-rebel"></i> <br>
+            This project was made using <a href="http://purecss.io" target="_blank">Pure</a>, and <a href="http://wicky.nillia.ms/headroom.js/" target="_blank">headroom.js</a> - all open source. Spread the love! <i class="fa fa-heart"></i>
+            </p>
         </div>
-    </div>
 
     <script type="text/javascript" src="jscolor/jscolor.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/headroom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.headroom.min.js"></script>
     <script type="text/javascript" src="js/index-main.js"></script>
 </body>
 </html>
