@@ -9,6 +9,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Pacifico|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" href="css/rainbow-babyblue.css">
 
     <!--[if lte IE 8]>
       
@@ -65,10 +66,6 @@
              <div class="content full">
                 <h2 class="content-head is-center"><a id="start"></a>Make a Color Palette</h2>
 
-                 <!-- <h4 class="is-center">
-                    Enter five hex color values below and click the view button for your stunning color palette.
-                </h4> -->
-
                 <div class="pure-g">
                     <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-5 color1">
                         <form class="pure-form pure-g">
@@ -108,6 +105,10 @@
                 </div>
                 <br>
                 <div style="text-align: center;">
+                    <button type="submit" class="pure-button pure-button-primary plzcenter" id="random">
+                        <i class="fa fa-random fa-lg"></i> 
+                        Random Colors
+                    </button>
                     <button type="submit" class="pure-button pure-button-primary plzcenter" id="create">
                         <i class="fa fa-eye fa-lg"></i> 
                         View Color Palette
@@ -171,14 +172,16 @@
                      <p>
                         You can create your own palette generation system that links to the palette creator, or quickly make your own links on-the-fly without even using a palette generator. Creation of a url is as simple as plugging in the color hexadecimal values as needed shown in the formula below.<br>
                         <br>
-                        http://alanwright.github.io/Color/palette.html?c1=<strong>XXXXXX</strong>&c2=<strong>XXXXXX</strong>&c3=<strong>XXXXXX</strong>&c4=<strong>XXXXXX</strong>&c5=<strong>XXXXXX</strong>&
-                        <br>
+                        <div class="is-code-full">
+                            <pre class="code code-wrap" data-language="html"><code>http://alanwright.github.io/Color/palette.html?c1=XXXXXX&c2=XXXXXX&c3=XXXXXX>&c4=XXXXXX&c5=XXXXXX&</code></pre>
+                        </div>
                         <br>
                         'c1' stands for color 1, c2 for color 2 and so on. Not all colors must be provided (they will default to another value). If you do not want a color I recommend specifying 'fff' for white. Hexadecimal color codes should be 3 or 6 characters. Below are some examples of palettes.
                         <br>
-                        <!-- <ul>
-                            <li><a href="http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&" target="_blank">http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&</a></li>
-                        </ul> -->
+                        <br>
+                        <div class="is-code-full">
+                            <pre class="code code-wrap" data-language="html"><code>http://alanwright.github.io/Color/palette.html?c1=2C3E50&c2=E74C3C&c3=ECF0F1&c4=3498DB&c5=2980B9&</code></pre>
+                        </div>
                     </p>
                 </div>
                  <div class="pure-u-1-5"></div>
@@ -194,7 +197,7 @@
                 <a href="https://twitter.com/iamalanwright" class="twitter-follow-button" data-show-count="false">Follow @iamalanwright</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br>
             Copyright &copy; <a href="http://www.wrightlyso.com" target="_blank">Alan Wright</a> 2014 <i class="fa fa-rebel"></i> <br>
-            This project was made using <a href="http://purecss.io" target="_blank">Pure</a>, <a href="https://github.com/odvarko/jscolor" target="_blank">jscolor</a> and <a href="http://wicky.nillia.ms/headroom.js/" target="_blank">headroom.js</a> - all open source. Spread the love! <i class="fa fa-heart"></i>
+            This project was made using <a href="http://purecss.io" target="_blank">Pure</a>, <a href="https://github.com/odvarko/jscolor" target="_blank">jscolor</a>, <a href="https://github.com/ccampbell/rainbow" target="_blank">rainbow</a> and <a href="http://wicky.nillia.ms/headroom.js/" target="_blank">headroom.js</a> - all open source. Spread the love! <i class="fa fa-heart"></i>
             </p>
         </div>
 
@@ -203,5 +206,6 @@
     <script type="text/javascript" src="js/headroom.min.js"></script>
     <script type="text/javascript" src="js/jQuery.headroom.min.js"></script>
     <script type="text/javascript" src="js/index-main.js"></script>
+    <script type="text/javascript" src="js/rainbow-custom.min.js"></script>
 </body>
 </html>

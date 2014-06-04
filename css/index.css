@@ -32,6 +32,16 @@ a:hover {
     text-decoration: underline;
 }
 
+code {
+    background: rgb(250, 250, 250);
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 1em;
+    border: 1px solid #eee;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 h1,
 h2,
 h3,
@@ -137,6 +147,8 @@ label {
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
+    overflow: hidden;
+    margin: 0px 10px;
 }
 
 a.pure-button-primary {
@@ -144,6 +156,10 @@ a.pure-button-primary {
     color: #1f8dd6;
     border-radius: 5px;
     font-size: 120%;
+}
+
+a.pure-button-primary:hover {
+    text-decoration: none;
 }
 
 
